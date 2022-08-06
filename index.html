@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="images/PcClick.png">
+	</head>
+	<body>
+	<div id="wrapper">
+	<div class="WincoinsText">
+		<p id="WincoinsText"></p>
+		<p id="WincoinsPerSecText"></p>
+	</div>
+		<p onclick="OpenReName()" id="FactoryNameText"></p>
+	<div class="ReNameFactoryWindow" id="ReNameFactoryWindow">
+		<div class="RNT1">Name your Factory</div>
+		<div class="RNT2">What should your factory's name be?</div>
+		<input id="NewNameInput">
+		<button class="RNB" onclick="ChangeName()" >Confirm</button>
+		<button class="RNB" onclick="RandomName()" >Random</button>
+		<button class="RNB" onclick="CancelName()" >Cancel</button>
+	</div>
+	<div id="Buildings">
+		<button class="Windows101" id="Product" onclick="BuyWindows101()">
+			<div class="ProductName">Windows 1.01</div>
+			<image class="ProductLogo" src="images/Windows1.01.png">
+			<image class="ProductCoinLogo" src="images/WinCoins.png">
+			<div class="ProductCostController">
+				<span class="ProductCost" id="Win101Cost"></span>
+			</div>
+			<div class="ProductHaveController">
+				<span class="ProductHave" id="Win101Have"></span>
+			</div>
+		<button class="Windows30" id="Product" onclick="BuyWindows30()">
+			<div class="ProductName">Windows 3.0</div>
+			<image id="Windows30Logo"class="ProductLogo" src="images/Windows3.0.png">
+			<image class="ProductCoinLogo" src="images/WinCoins.png">
+			<div class="ProductCostController">
+				<span class="ProductCost" id="Win30Cost"></span>
+			</div>
+			<div class="ProductHaveController">
+				<span class="ProductHave" id="Win30Have"></span>
+			</div>
+	</div>
+	<div id="darken"></div>
+	<input class="PcImageClick" type="image" src="images/PcClick.png" onclick="ClickPC()">
+	<script src="main.js"></script>
+	</div>
+	</body>
+</html>
